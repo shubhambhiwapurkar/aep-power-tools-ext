@@ -1,6 +1,6 @@
-# AEP Power Tools — Chrome Extension 🚀
+# AEP Power Tools - Chrome Extension
 
-**Adobe Experience Platform (AEP)** management, monitoring, and debugging — supercharged.
+**Adobe Experience Platform (AEP)** management, monitoring, and debugging.
 
 This Chrome Extension transforms the AEP UI into a powerhouse for Developers and Marketers, providing deep introspection, real-time metrics, and AI-driven insights directly within your browser.
 
@@ -9,7 +9,7 @@ This Chrome Extension transforms the AEP UI into a powerhouse for Developers and
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 ### 1. **Advanced Dashboard & KPIs**
 *   **Data Heartbeat**: Visualizing 24h ingestion patterns.
@@ -21,7 +21,7 @@ This Chrome Extension transforms the AEP UI into a powerhouse for Developers and
 *   **Smart Actions**: One-click Postman collection generation for any entity.
 *   **Deep Linking**: Navigate complex relationships instantly.
 
-### 3. **Developer Utilities (Pain Point Solvers)**
+### 3. **Developer Utilities**
 *   **SQL Anti-Pattern Linter**: Prevent query timeouts by detecting bad practices (e.g., missing time filters, `SELECT *`).
 *   **Identity Graph Visualizer**: See the real Identity Service graph clusters to debug "Graph Collapse".
 *   **Sync Gap Auditor**: Detect "Dirty" segments that have changed logic but haven't synced to destinations.
@@ -33,7 +33,7 @@ This Chrome Extension transforms the AEP UI into a powerhouse for Developers and
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 ### Locally (Developer Mode)
 1.  Clone this repository:
@@ -62,7 +62,7 @@ This Chrome Extension transforms the AEP UI into a powerhouse for Developers and
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 Built with a modern, performance-first stack:
 *   **React 18** + **Vite** (Fast HMR & Building)
@@ -84,7 +84,7 @@ src/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please fork the repo and submit a Pull Request.
 
@@ -96,6 +96,6 @@ We welcome contributions! Please fork the repo and submit a Pull Request.
 
 ---
 
-## 📄 License
+## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. Copyright (c) 2024 Shubham Bhiwapurkar.
