@@ -1,5 +1,13 @@
 # AEP Power Tools - Chrome Extension
 
+> **This project is superseded by [AEP AI Center](https://github.com/shubhambhiwapurkar/aep-ai-center)** (`extension/` folder).
+> Its explorer, command palette, SQL linter and audits live there now, along with page awareness (it knows which
+> dataset, schema, audience or dataflow you have open in AEP), a sandbox hygiene audit, Chrome Enterprise policy support,
+> and a backend that keeps your Adobe client secret off the browser. New features land there only.
+>
+> **Security note:** this extension stores the Adobe Developer Console client secret in the browser (IndexedDB) and
+> requests IMS tokens from the extension. Use it only with a personal development sandbox.
+
 **Adobe Experience Platform (AEP)** management, monitoring, and debugging.
 
 This Chrome Extension transforms the AEP UI into a powerhouse for Developers and Marketers, providing deep introspection, real-time metrics, and AI-driven insights directly within your browser.
@@ -24,7 +32,7 @@ This Chrome Extension transforms the AEP UI into a powerhouse for Developers and
 ### 3. **Developer Utilities**
 *   **SQL Anti-Pattern Linter**: Prevent query timeouts by detecting bad practices (e.g., missing time filters, `SELECT *`).
 *   **Identity Graph Visualizer**: See the real Identity Service graph clusters to debug "Graph Collapse".
-*   **Sync Gap Auditor**: Detect "Dirty" segments that have changed logic but haven't synced to destinations.
+*   **Evaluation Gap Auditor**: Find batch audiences whose rule changed after their last successful evaluation job (destinations still get the old membership until the next run).
 *   **Throughput Gauge**: Estimate streaming ingestion pressure.
 
 ### 4. **Global Command Palette** (`Ctrl+K`)

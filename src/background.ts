@@ -10,11 +10,15 @@ chrome.sidePanel
     .catch((error: any) => console.error(error));
 
 // Optional: Context menu to open side panel
+// Requires the "contextMenus" permission (public/manifest.json). removeAll first so an update
+// doesn't fail with a duplicate-id error.
 chrome.runtime.onInstalled.addListener(() => {
-    chrome.contextMenus.create({
-        id: 'openSidePanel',
-        title: 'Open Side Panel',
-        contexts: ['all']
+    chrome.contextMenus.removeAll(() => {
+        chrome.contextMenus.create({
+            id: 'openSidePanel',
+            title: 'Open Side Panel',
+            contexts: ['all']
+        });
     });
 });
 

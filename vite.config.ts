@@ -17,6 +17,8 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 popup: path.resolve(__dirname, 'popup.html'),
+                // Service worker referenced by public/manifest.json as assets/background.js
+                background: path.resolve(__dirname, 'src/background.ts'),
             },
             output: {
                 entryFileNames: 'assets/[name].js',

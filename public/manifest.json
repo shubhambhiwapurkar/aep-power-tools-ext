@@ -1,11 +1,14 @@
 {
     "manifest_version": 3,
     "name": "AEP Power Tools",
-    "version": "1.0.0",
-    "description": "Adobe Experience Platform monitoring, management & AI copilot — all in one Chrome extension",
+    "version": "1.0.1",
+    "description": "Adobe Experience Platform monitoring, management & AI copilot. Superseded by AEP AI Center (github.com/shubhambhiwapurkar/aep-ai-center).",
+    "minimum_chrome_version": "116",
     "permissions": [
         "storage",
-        "activeTab"
+        "activeTab",
+        "sidePanel",
+        "contextMenus"
     ],
     "host_permissions": [
         "https://platform.adobe.io/*",
@@ -15,18 +18,15 @@
         "https://api.anthropic.com/*",
         "https://openrouter.ai/*"
     ],
-    "action": {
-        "default_popup": "popup.html",
-        "default_icon": {
-            "16": "icons/icon16.png",
-            "48": "icons/icon48.png",
-            "128": "icons/icon128.png"
-        }
+    "side_panel": {
+        "default_path": "popup.html"
     },
-    "icons": {
-        "16": "icons/icon16.png",
-        "48": "icons/icon48.png",
-        "128": "icons/icon128.png"
+    "background": {
+        "service_worker": "assets/background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_title": "Open AEP Power Tools"
     },
     "content_security_policy": {
         "extension_pages": "script-src 'self'; object-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"
